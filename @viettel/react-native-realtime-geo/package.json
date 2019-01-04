@@ -1,0 +1,28 @@
+{
+  "name": "react-native-realtime-geo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ci": "scripts/local-ci.sh"
+  },
+  "rnpm": {
+    "commands": {
+      "prelink":
+        "node_modules/react-native-my-native-module/scripts/pre-link.sh",
+      "postlink":
+        "node_modules/react-native-my-native-module/scripts/post-link.sh"
+    }
+  },
+  "keywords": ["react-native"],
+  "author": {
+    "email": "thanhpcc1996@gmail.com",
+    "name": "Thanh Pham(thanhpcc96)",
+    "url": "https://facebook.com/thanhpcc96"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "react-native": ">=0.41.2"
+  }
+}

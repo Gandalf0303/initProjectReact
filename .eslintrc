@@ -1,0 +1,32 @@
+{
+  "parser": "babel-eslint",
+  "extends": "thanhpcc",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true,
+      "legacyDecorators": true
+    }
+  },
+  "rules": {
+    "arrow-body-style": "warn",
+    "lines-between-class-members": "off",
+    "no-use-before-define": "warn",
+    "implicit-arrow-linebreak": "off",
+    "react/prop-types": "off",
+    "comma-dangle": "off",
+    "no-unused-expressions": "off",
+    "global-require": "off",
+    "no-underscore-dangle": "off",
+    "no-param-reassign": "off",
+    "import/no-unresolved": "off",
+    "import/no-extraneous-dependencies": "off",
+    "no-mixed-operators": "off",
+    "camelcase": "off",
+    "one-var": "off",
+    "no-nested-ternary": "off",
+    "no-alert": "off",
+    "no-restricted-syntax": "off",
+    "guard-for-in": "off"
+  }
+}

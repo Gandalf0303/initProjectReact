@@ -1,0 +1,13 @@
+// export const ROLE_ID = '4'; // CSE
+// export const MTI = '0200';
+// export const ACTION_NODE = '1';
+// export const DEFAULT_NUMBER_MAX_LENGTH = 15;
+// export const DEFAULT_CONTENT_MAX_LENGTH = 250;
+// export const AUTO_FORCE_CHECK_LENGTH = 10;
+// export const AREACODE = '95';
+// export const DEFAULT_LANGUAGE = 'en_US';
+// export const DEFAULT_CURRENCY_CODE = '104';
+// export const DEFAULT_COUNTRY_CODE = '95';
+// export const DEFAULT_COUNTRY = 'MM';
+// export const UPLOAD_DIRECTORY = 'MOBILE';
+// export const VERSION = '2.0.1';

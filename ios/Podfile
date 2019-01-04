@@ -1,0 +1,75 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+
+target 'MytelPayAGENT' do
+  pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+  pod 'React', path: '../node_modules/react-native', :subspecs => [
+    'Core',
+    'RCTActionSheet',
+    'RCTAnimation',
+    'RCTGeolocation',
+    'RCTImage',
+    'RCTLinkingIOS',
+    'RCTNetwork',
+    'RCTSettings',
+    'RCTText',
+    'RCTVibration',
+    'RCTWebSocket',
+    'RCTSettings',
+    'DevSupport'
+  ]
+  pod 'Fabric'
+  pod 'Crashlytics'
+  # pod 'Firebase/Auth'
+  pod 'Firebase/Core'
+  # pod 'Firebase/Firestore'
+  pod 'Firebase/Performance'
+  # pod 'Firebase/RemoteConfig'
+  # pod 'Firebase/DynamicLinks'
+  # pod 'Bolts'
+  # pod 'FBSDKCoreKit'
+  # pod 'FBSDKShareKit'
+  # pod 'FBSDKLoginKit'
+
+  pod 'GoogleMaps'
+  pod 'Google-Maps-iOS-Utils'
+  pod 'GooglePlaces'
+  pod 'GooglePlacePicker'
+
+  # for google sign_in
+  # pod 'GoogleSignIn'
+  # pod 'GoogleSymbolUtilities'
+  # pod 'GoogleAppUtilities'
+  # pod 'GoogleNetworkingUtilities'
+  # pod 'GoogleUtilities'
+
+  pod 'RNI18n', :path => '../node_modules/react-native-i18n'
+  pod 'react-native-maps', path: '../node_modules/react-native-maps'
+  pod 'react-native-google-maps', path: '../node_modules/react-native-maps'
+  pod 'react-native-image-picker', path: '../node_modules/react-native-image-picker'
+  pod 'rn-fetch-blob', :path => '../node_modules/rn-fetch-blob'
+  pod 'react-native-fast-image', path: '../node_modules/react-native-fast-image'
+  pod 'react-native-camera', path: '../node_modules/react-native-camera'
+  pod 'RNKeychain', :path => '../node_modules/react-native-keychain'
+
+  # CodePush plugin dependency
+  # pod 'CodePush', :path => '../node_modules/react-native-code-push'
+
+  pod 'Interactable', :path => '../node_modules/react-native-interactable'
+
+  pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
+
+end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        if target.name == "react-native-google-maps"
+            target.build_configurations.each do |config|
+                config.build_settings['CLANG_ENABLE_MODULES'] = 'No'
+            end
+        end
+        if target.name == "React"
+          target.remove_from_project
+        end
+    end
+end

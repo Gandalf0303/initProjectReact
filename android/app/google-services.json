@@ -1,0 +1,79 @@
+{
+  "project_info": {
+    "project_number": "885737272650",
+    "firebase_url": "https://viettelmobilecore.firebaseio.com",
+    "project_id": "viettelmobilecore",
+    "storage_bucket": "viettelmobilecore.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885737272650:android:7a359cc2d5359227",
+        "android_client_info": {
+          "package_name": "com.mytelpay.agent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "885737272650-b73ugg1olcdb4a66m685t6eal9igaohu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgY0hxhaniMmCcCJchhvxn4oYIspxnM4E"
+        },
+        {
+          "current_key": "AIzaSyALiK8ExeGsxRZ4v6doQHN3ELedmDN2Wic"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885737272650:android:bf6a14cf2ac2f277",
+        "android_client_info": {
+          "package_name": "com.rebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "885737272650-b73ugg1olcdb4a66m685t6eal9igaohu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgY0hxhaniMmCcCJchhvxn4oYIspxnM4E"
+        },
+        {
+          "current_key": "AIzaSyALiK8ExeGsxRZ4v6doQHN3ELedmDN2Wic"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
